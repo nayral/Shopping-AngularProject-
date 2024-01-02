@@ -22,14 +22,36 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 - [Node.js](https://nodejs.org/) - Versão LTS recomendada
 - [Angular CLI](https://angular.io/cli) - Instale globalmente usando o comando `npm install -g @angular/cli`
 
-## Configuração do Ambiente
+## Estilos e Temas
+O projeto faz uso das bibliotecas PrimeNG e PrimeFlex para estilos e temas. As importações necessárias estão configuradas no arquivo app.component.html. Certifique-se de incluir essas importações em seus arquivos conforme necessário:
 
-Clone este repositório e navegue até o diretório do projeto:
+``` <!-- Adicione as importações no cabeçalho do seu arquivo app.component.html -->
+<link rel="stylesheet" type="text/css" href="caminho/para/primeflex.css" />
+<link rel="stylesheet" type="text/css" href="caminho/para/primeng.css" />
+<link rel="stylesheet" type="text/css" href="caminho/para/tema/primeng.css" />
+```
 
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
 
+## Executando o Projeto 
+Inicie o servidor de desenvolvimento do Angular:
 
+```
+ng serve
+```
+
+Acesse o aplicativo em http://localhost:4200. O aplicativo será recarregado automaticamente sempre que você fizer alterações no código-fonte.
+
+## Estrutura do Projeto
+A estrutura do projeto é organizada da seguinte forma:
+
+src/app: Contém os componentes, serviços e outros artefatos do Angular.
+src/assets: Armazena arquivos estáticos, como imagens, estilos e fontes.
+
+## Componentes Principais
+O layout do projeto é construído usando os seguintes componentes principais:
+
+p-grid: Componente do PrimeFlex para criação de layouts flexíveis.
+p-col: Componente do PrimeFlex representando colunas do layout.
+p-card: Componente do PrimeNG para criar caixas de conteúdo.
 
 
