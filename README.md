@@ -50,8 +50,8 @@ src/assets: Armazena arquivos estáticos, como imagens, estilos e fontes.
 ## Componentes Principais
 O layout do projeto é construído usando os seguintes componentes principais:
 
-p-grid: Componente do PrimeFlex para criação de layouts flexíveis.
-p-col: Componente do PrimeFlex representando colunas do layout.
-p-card: Componente do PrimeNG para criar caixas de conteúdo.
+### p-grid: Componente do PrimeFlex para criação de layouts flexíveis.
+### p-col: Componente do PrimeFlex representando colunas do layout.
+### p-card: Componente do PrimeNG para criar caixas de conteúdo.
 
 
