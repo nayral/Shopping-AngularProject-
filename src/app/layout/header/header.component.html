@@ -1,0 +1,23 @@
+<p-toolbar styleClass="bg-bluegray-100">
+<div class="p-toolbar-group-start">
+        <div class="card flex justify-content-center">
+            <app-sidebar></app-sidebar>
+        </div>
+        <span class="flex font-bold text-blue-800 text-3xl ml-2 mr-1">IBM </span>
+        <span class=" mr-4 text-2xl text-align text-blue-700"> Shop</span>
+    </div>
+    <div class="p-toolbar-group-center">
+        <div class="card flex flex-wrap m-0 justify-content-right">
+            <span class="p-input-icon-right">
+                <i class="pi pi-search"></i>
+                <input placeholder="Pesquisar" type="text" pInputText (ngModel)="value" />
+            </span>
+        </div>
+    </div>
+    <div class="p-toolbar-group-end">     
+        <p-button icon="pi pi-moon"styleClass="p-button-rounded m-1 p-button-text p-button-secondary" ></p-button>
+        <p-button icon="pi pi-shopping-cart"styleClass="p-button-rounded m-1 p-button-text  p-button-secondary" ></p-button>
+        <p-button icon="pi pi-user"styleClass="p-button-rounded m-1 p-button-text  p-button-secondary" ></p-button>
+        <p-button label="Login" styleClass="p-button-raised m-1 p-button-text p-button-black  p-button-secondary" ></p-button>
+    </div>
+</p-toolbar>
