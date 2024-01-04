@@ -1,23 +1,51 @@
-<p-toolbar styleClass="bg-bluegray-100">
-<div class="p-toolbar-group-start">
-        <div class="card flex justify-content-center">
+<div class="sidebar overflow-hidden">
+  <div class="card w-full absolute top-0 left-0 overflow-hidden">
+    <div class="relative bg-bluegray-200 border-round border-1" style="border:red 1px solid">
+    
+      <p-toolbar
+        styleClass="w-full h-8 border-noround bg-bluegray-200 font-bold p-3 flex align-items-center justify-content-around"
+      >
+        <div class="p-toolbar-group-start w-2"  style="border:red 1px solid">
+          <div class="card flex-wrap justify-content-center">
             <app-sidebar></app-sidebar>
+          </div>
+          <span class="flex font-bold text-blue-800 w-2"  style="border:red 1px solid"
+            >IBM
+          </span>
+          <span class="flex font-bold text-blue-800 w-2"> Shop</span>
         </div>
-        <span class="flex font-bold text-blue-800 text-3xl ml-2 mr-1">IBM </span>
-        <span class=" mr-4 text-2xl text-align text-blue-700"> Shop</span>
-    </div>
-    <div class="p-toolbar-group-center">
-        <div class="card flex flex-wrap m-0 justify-content-right">
+        <div class="p-toolbar-group-center w-5" style="border:red 1px solid" >
+          <div class="card flex flex-wrap m-0 justify-content-center align-content-center" style="border:red 1px solid">
             <span class="p-input-icon-right">
-                <i class="pi pi-search"></i>
-                <input placeholder="Pesquisar" type="text" pInputText (ngModel)="value" />
+              <i class="pi pi-search"></i>
+              <input
+                placeholder="Pesquisar"
+                type="text"
+                pInputText
+                (ngModel)="(value)"
+              />
             </span>
+          </div>
         </div>
+        <div class="p-toolbar-group-end w-2" style="border:red 1px solid">
+          <p-button
+            icon="pi pi-moon"
+            styleClass="p-button-rounded m-1 p-button-text p-button-secondary"
+          ></p-button>
+          <p-button
+            icon="pi pi-shopping-cart"
+            styleClass="p-button-rounded m-1 p-button-text  p-button-secondary"
+          ></p-button>
+          <p-button
+            icon="pi pi-user"
+            styleClass="p-button-rounded m-1 p-button-text  p-button-secondary"
+          ></p-button>
+          <p-button
+            label="Login"
+            styleClass="p-button-raised m-1 p-button-text p-button-black  p-button-secondary"
+          ></p-button>
+        </div>
+      </p-toolbar>
     </div>
-    <div class="p-toolbar-group-end">     
-        <p-button icon="pi pi-moon"styleClass="p-button-rounded m-1 p-button-text p-button-secondary" ></p-button>
-        <p-button icon="pi pi-shopping-cart"styleClass="p-button-rounded m-1 p-button-text  p-button-secondary" ></p-button>
-        <p-button icon="pi pi-user"styleClass="p-button-rounded m-1 p-button-text  p-button-secondary" ></p-button>
-        <p-button label="Login" styleClass="p-button-raised m-1 p-button-text p-button-black  p-button-secondary" ></p-button>
-    </div>
-</p-toolbar>
+  </div>
+</div>

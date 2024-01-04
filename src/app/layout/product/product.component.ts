@@ -9,13 +9,13 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
-  selector: 'app-body',
+  selector: 'app-product',
   standalone: true,
   imports: [CommonModule, ToolbarModule, MultiSelectModule, InputTextModule, SelectButtonModule,FormsModule, CardModule, ButtonModule],
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.scss']
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.scss']
 })
-export class BodyComponent {
+export class ProductComponent {
 
   value: any;
 

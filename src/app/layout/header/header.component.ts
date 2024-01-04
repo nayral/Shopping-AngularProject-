@@ -11,7 +11,7 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   standalone: true,
   imports: [CommonModule,ToolbarModule,SidebarModule,ButtonModule, InputTextModule, SidebarComponent],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: []
 })
 export class HeaderComponent {
     sidebarVisible: boolean = false;

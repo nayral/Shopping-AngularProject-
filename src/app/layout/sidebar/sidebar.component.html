@@ -1,27 +1,43 @@
 <div class="card flex justify-content-center">
-    <p-button (click)="sidebarVisible = true" icon="pi pi-bars" styleClass="p-button-raised m-1 p-button-text p-button-secondary"></p-button>
-
-    <p-sidebar [(visible)]="sidebarVisible">
-        <div class="card flex justify-content-center">
-            <div class="card flex justify-content-center">
-                <p-tieredMenu [model]="items" ></p-tieredMenu>
-            </div>
-        </div>    
-        <p-divider></p-divider>
-        <div class="card flex justify-content-center">
-            <div class="card flex justify-content-center">
-                <p-tieredMenu [model]="items2" ></p-tieredMenu>
-            </div>   
-        </div>
-        <p-divider></p-divider>
-        <div class="card flex my-5 justify-content-center">
-            <span class="flex font-light text-blue-700 text-2xl ml-2 mr-1">Filtros</span>
-        </div>
-        <span class="flex flex-wrap mb-3" id="label_number">Filtrar por Preço</span>
-            <p-slider ariaLabel="Number"></p-slider>
-        <span class="card flex my-5 justify-content flex-wrap mb-3" id="label_number">Filtrar por Categoria</span>
-        <div class="flex flex-column w-full ">
-                <p-multiSelect styleClass="w-full" [options]="items3" [(ngModel)]="selectedMultiSelectValues" optionLabel="name"></p-multiSelect>
-        </div>      
-    </p-sidebar>
+<div style="border:red 1px solid" size="small">
+  <p-button
+    (click)="sidebarVisible = true"
+    icon="pi pi-bars"
+    styleClass="p-button-raised p-button-text p-button-secondary" 
+  ></p-button>
+</div>
+  <p-sidebar [(visible)]="sidebarVisible">
+    <div class="card flex justify-content-center">
+      <div class="card flex justify-content-center">
+        <p-tieredMenu [model]="items"></p-tieredMenu>
+      </div>
+    </div>
+    <p-divider></p-divider>
+    <div class="card flex justify-content-center">
+      <div class="card flex justify-content-center">
+        <p-tieredMenu [model]="items2"></p-tieredMenu>
+      </div>
+    </div>
+    <p-divider></p-divider>
+    <div class="card flex my-5 justify-content-center">
+      <span class="flex font-light text-blue-700 text-2xl ml-2 mr-1"
+        >Filtros</span
+      >
+    </div>
+    <span class="flex flex-wrap mb-3" id="label_number">Filtrar por Preço</span>
+    <p-slider ariaLabel="Number"></p-slider>
+    <span
+      class="card flex my-5 justify-content flex-wrap mb-3"
+      id="label_number"
+      >Filtrar por Categoria</span
+    >
+    <div class="flex flex-column w-full">
+      <p-multiSelect
+        styleClass="w-full"
+        [options]="items3"
+        [(ngModel)]="selectedMultiSelectValues"
+        optionLabel="name"
+      ></p-multiSelect>
+    </div>
+  </p-sidebar>
 </div>
